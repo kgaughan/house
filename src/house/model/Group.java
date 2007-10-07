@@ -6,8 +6,6 @@
 
 package house.model;
 
-import house.Utils;
-
 /**
  *
  * @author kgaughan

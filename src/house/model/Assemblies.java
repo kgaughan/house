@@ -7,7 +7,7 @@
 package house.model;
 
 import talideon.utils.PropertyList;
-import house.Utils;
+import talideon.Utils;
 import java.util.HashMap;
 import java.util.Map;
 

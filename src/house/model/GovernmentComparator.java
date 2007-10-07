@@ -6,7 +6,6 @@
 
 package house.model;
 
-import house.Utils;
 import java.util.Comparator;
 
 /**

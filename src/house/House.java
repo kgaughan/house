@@ -10,7 +10,6 @@ import house.model.Assemblies;
 import house.model.Assembly;
 import talideon.i18n.I18N;
 import talideon.utils.PropertyList;
-import house.Utils;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Container;
@@ -108,7 +107,7 @@ public class House extends JApplet {
      *
      */
     public void init() {
-        PropertyList house = Utils.loadPropertyList(getParameter("url"));
+        PropertyList house = PropertyList.load(getParameter("url"));
         if (house == null) {
             return;
         }

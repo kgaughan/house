@@ -6,6 +6,7 @@
 
 package house;
 
+import talideon.ui.Utils;
 import talideon.ui.charting.Chart;
 import talideon.ui.charting.ComponentChart;
 import talideon.ui.charting.DifferenceChart;
@@ -13,7 +14,6 @@ import talideon.ui.charting.SimpleValue;
 import house.model.Assembly;
 import house.model.Group;
 import house.model.GovernmentComparator;
-import house.Utils;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;

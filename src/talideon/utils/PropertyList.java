@@ -109,4 +109,15 @@ public class PropertyList {
         }
         return properties;
     }
+
+    public static PropertyList load(final String url) {
+        try {
+            return new PropertyList(url);
+        } catch (java.net.MalformedURLException ex) {
+            talideon.ui.Utils.showError("Bad URL: " + url);
+        } catch (java.io.IOException ex) {
+            talideon.ui.Utils.showError("Could not load data from" + url);
+        }
+        return null;
+    }
 }

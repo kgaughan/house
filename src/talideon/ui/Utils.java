@@ -4,10 +4,9 @@
  * Created on 19 June 2006, 14:43
  */
 
-package house;
+package talideon.ui;
 
 import java.awt.Color;
-import talideon.utils.PropertyList;
 
 /**
  * Miscellaneous utilities used by the rest of the code.
@@ -18,33 +17,6 @@ public class Utils {
 
     // Prevents instantiation.
     private Utils() {}
-
-    /**
-     *
-     */
-    public static boolean contains(final Object[] haystack, final Object needle) {
-        for (int i = 0; i < haystack.length; ++i) {
-            if (haystack[i].equals(needle)) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    /**
-     *
-     */
-    public static PropertyList loadPropertyList(final String url) {
-        PropertyList list = null;
-        try {
-            list = new PropertyList(url);
-        } catch (java.net.MalformedURLException ex) {
-            showError("Bad URL: " + url);
-        } catch (java.io.IOException ex) {
-            showError("Could not load data from" + url);
-        }
-        return list;
-    }
 
     /**
      *

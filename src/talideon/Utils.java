@@ -4,7 +4,7 @@
  * Created on 18 June 2006, 09:02
  */
 
-package talideon.text;
+package talideon;
 
 /**
  *
@@ -31,5 +31,17 @@ public class Utils {
         }
 
         return Integer.toString(n) + suffix;
+    }
+
+    /**
+     *
+     */
+    public static boolean contains(final Object[] haystack, final Object needle) {
+        for (int i = 0; i < haystack.length; ++i) {
+            if (haystack[i].equals(needle)) {
+                return true;
+            }
+        }
+        return false;
     }
 }
